@@ -1,11 +1,21 @@
+function customRender(reactElement,mainConatainer){
+    const element = document.createElement(reactElement.type);
+    element.innerHTML=reactElement.children;
+   for (const prop in reactElement.props) {
+     element.setAttribute(prop, reactElement.props[prop]);    
+   }
+    mainConatainer.appendChild(element);
+}
+
 const reactElement = {
     type:'a',
     props:{
-         href:'google.com',
+         href:'https://www.google.com/',
          target: '_blank'
     },
-    childer:'Click me to visit Google '
+    children:'Click me to visit Google '
 }
 
 const mainConatainer = document.querySelector('#root');
 
+customRender(reactElement,mainConatainer)
