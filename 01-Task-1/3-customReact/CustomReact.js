@@ -14,7 +14,7 @@ const reactElement = {
          target: '_blank'
     },
     children:'Click me to visit Google '
-}
+}//in react the syntex is bit different
 
 const mainConatainer = document.querySelector('#root');
 
