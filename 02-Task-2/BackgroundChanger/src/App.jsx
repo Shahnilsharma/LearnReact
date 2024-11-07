@@ -3,6 +3,7 @@ import { useState } from 'react'
 function App() {
   const [color, setColor] = useState("black")
 
+
   return (
     <>
    
@@ -15,7 +16,7 @@ function App() {
             <button className='outline-none rounded-full text-white px-2 py-2 my-2' style={{backgroundColor:'green'}} onClick={()=>setColor('green')} >Green</button>
             <button className='outline-none rounded-full text-white px-2 py-2 my-2' style={{backgroundColor:'yellow'}} onClick={()=>setColor('yellow')} >Yellow</button>
             <button className='outline-none rounded-full text-white px-2 py-2 my-2' style={{backgroundColor:'purple'}} onClick={()=>setColor('purple')} >Purple</button>
-            <button className='outline-none rounded-full text-white px-2 py-2 my-2' style={{backgroundColor:'brown'}} onClick={()=>setColor('brown')} >Brown</button>
+            <button className='outline-none rounded-full text-white px-2 py-2 my-2' style={{backgroundColor:'brown'}} onClick={()=>setColor('brown')} >Brown </button>
           </div>
         </div>
        </div>
